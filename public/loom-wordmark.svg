@@ -1,0 +1,6 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="14" fill="#111827"/>
+  <path d="M13 13H23V23H13V13Z" fill="#D8FF5F"/><path d="M27 13H37V23H27V13Z" fill="#A78BFA"/>
+  <path d="M13 27H23V37H13V27Z" fill="#A78BFA"/><path d="M27 27H37C31.5 27 27 31.5 27 37V27Z" fill="#D8FF5F"/>
+  <text x="61" y="31" fill="#111827" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="-1">loomly</text>
+</svg>
