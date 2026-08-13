@@ -224,3 +224,115 @@
 [2026-08-13T06:51:20.552Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
 [2026-08-13T06:51:22.453Z] INFO  [Sync:VsCodeBootstrap] Memory Bank sync engine built (auto-sync off — manual only)
 [2026-08-13T06:51:23.189Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=d:\project 1\themee-downloader
+[2026-08-13T17:27:41.905Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-08-13T17:27:42.249Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-08-13T17:27:45.348Z] INFO  [PostCommitHook] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Detected operation: commit
+[2026-08-13T17:27:45.736Z] INFO  [PostCommitHook] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Enqueued: type=commit hash=37385c91
+[2026-08-13T17:27:45.737Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Launching background worker
+[2026-08-13T17:27:47.159Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Background worker spawned (PID: 19648)
+[2026-08-13T17:27:48.506Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] === Queue worker started === node=24.12.0 kind=vscode-plugin source=vscode pkgVer=0.99.11 cliVer=0.99.11 dist=c:\Users\Bharath\.vscode\extensions\jolli.jollimemory-vscode-0.99.11\dist
+[2026-08-13T17:27:48.748Z] INFO  [StorageFactory] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] StorageFactory.create: route=cutover, projectPath=D:\project 1\themee-downloader
+[2026-08-13T17:27:49.628Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Processing queue entry: type=commit hash=37385c91
+[2026-08-13T17:27:49.797Z] INFO  [GitOps] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Commit 37385c91: implementation of agent.md and design system
+[2026-08-13T17:27:49.797Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Commit: 37385c91 - implementation of agent.md and design system (160ms)
+[2026-08-13T17:27:50.007Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] No active sessions found — will infer topics from diff if available
+[2026-08-13T17:27:50.361Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Git diff: 16 files changed, +689 -101 (353ms)
+[2026-08-13T17:27:50.724Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-08-13T17:27:50.726Z] INFO  [Summarizer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Generating summary for commit 37385c91
+[2026-08-13T17:27:50.726Z] INFO  [Summarizer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Context: transcript=0, files=16, lines=689+101
+[2026-08-13T17:27:50.726Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] LLM call: action=summarize source=jolli-proxy
+[2026-08-13T17:27:50.728Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM call: action=summarize url=https://jolli.ai/api/push/llm/complete
+[2026-08-13T17:28:10.497Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM response: action=summarize latency=19764ms
+[2026-08-13T17:28:10.505Z] INFO  [Summarizer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Parsed 2 topic(s) from delimited text format
+[2026-08-13T17:28:10.506Z] INFO  [Summarizer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Summary parsed: 2 topic(s), response length: 4158 chars
+[2026-08-13T17:28:10.507Z] INFO  [Summarizer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5]   Topic 1: Rewrote project guidelines for AI Shopify theme builder
+[2026-08-13T17:28:10.507Z] INFO  [Summarizer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5]   Topic 2: Replaced starter homepage with a visual design system reference page
+[2026-08-13T17:28:10.507Z] INFO  [Summarizer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Recap (1132 chars): The project's contributor guidelines were rewritten from generic starter boilerplate into a full specification for the A
+[2026-08-13T17:28:10.507Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] API summary generated (19.8s)
+[2026-08-13T17:28:10.512Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Plan registry scan: found 0 uncommitted slug(s) on 1.Agent.md-and-design-system-setup-: []
+[2026-08-13T17:28:10.512Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Plan association: detected 0 slug(s) from transcripts: []
+[2026-08-13T17:28:10.514Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Note registry scan: found 0 uncommitted note(s) on 1.Agent.md-and-design-system-setup-: []
+[2026-08-13T17:28:10.514Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Note association: detected 0 note(s): []
+[2026-08-13T17:28:10.517Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Reference association: detected 0 ref(s) for branch 1.Agent.md-and-design-system-setup-
+[2026-08-13T17:28:10.531Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Summary built for 37385c91: recap=yes, topics=2, plans=absent, notes=absent, references=absent
+[2026-08-13T17:28:11.178Z] INFO  [MetadataManager] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Branch mapping created: 1.Agent.md-and-design-system-setup- → 1.Agent.md-and-design-system-setup
+[2026-08-13T17:28:11.275Z] INFO  [MetadataManager] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Manifest updated: 1.Agent.md-and-design-system-setup/implementation-of-agentmd-and-design-system-37385c91.md (commit)
+[2026-08-13T17:28:11.275Z] INFO  [FolderStorage] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Markdown generated: 1.Agent.md-and-design-system-setup/implementation-of-agentmd-and-design-system-37385c91.md
+[2026-08-13T17:28:11.286Z] INFO  [FolderStorage] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Wrote 3 files, deleted 0 (Add summary for 37385c91: implementation of agent.md and design system)
+[2026-08-13T17:28:11.287Z] INFO  [SummaryStore] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Summary stored successfully for commit 37385c91
+[2026-08-13T17:28:11.293Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Summary stored successfully for commit 37385c91 (762ms, 0 plans, 0 notes, 0 references)
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] === Pipeline completed in 21.7s ===
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] === Summary content (2 topics) ===
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Topic: Rewrote project guidelines for AI Shopify theme builder
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5]   Trigger:   The project's contributor guidelines were still the generic Next.js starter boilerplate and needed to reflect the actual product being built: an AI-powered Shopify theme generator.
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5]   Response:  - Replaced the entire content of AGENTS.md with a detailed specification covering the product's purpose, tech stack, core user flow, architecture layering, AI generation pipeline, and provider abstraction interface.
+- Added explicit rules for preview security (sandboxing untrusted generated code), Shopify theme export requirements (folder structure, schema validation, liquid conventions), and image handling via ImageKit.
+- Documented coding standards, testing expectations, and security rules covering credential handling for the AI provider, database, image service, and Shopify integrations.
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5]   Decisions: - **Provider-independent AI layer**: The AI integration was designed around a shared interface so that no part of the application hardcodes a single AI vendor, keeping the option to swap or add providers without rewriting generation logic.
+- **Constrained, staged generation instead of one-shot output**: Rather than generating an entire theme in a single AI response, the plan calls for an interpret-then-generate-then-validate pipeline (project brief → page spec → per-section generation → validation → streaming), reducing the risk of malformed or unsafe output reaching the preview.
+- **Untrusted preview execution**: Generated storefront code is treated as untrusted and must run inside a sandboxed rendering environment, explicitly banning script execution primitives and unrestricted network access to protect the builder application and its users.
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Topic: Replaced starter homepage with a visual design system reference page
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5]   Trigger:   The default Next.js starter homepage and global styles were placeholder content left over from project scaffolding and needed to be replaced with something useful for the new product.
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5]   Response:  - Rewrote app/page.tsx to render a design-system showcase page displaying color palettes, typography scale, buttons, spacing, border radii, shadows, and example UI components (cards, inputs, selects, tags, alerts).
+- Replaced app/globals.css with a custom minified stylesheet defining the visual styling for the new homepage layout, removing the previous Tailwind theme variables and dark-mode handling.
+- Removed all references to the default Next.js/Vercel starter content (logos, deploy links, learning center links).
+[2026-08-13T17:28:11.295Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5]   Decisions: The homepage was repurposed as a living design-system reference rather than left as generic starter content, giving the team a single visual page to check colors, type, and component styles against as the builder UI is developed.
+[2026-08-13T17:28:11.316Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Processed 1 queue entries
+[2026-08-13T17:28:11.334Z] INFO  [SessionTracker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Enqueued queue operation: type=ingest tag=ingest file=1786642091330-00000001-219cdb82-ingest.json
+[2026-08-13T17:28:11.341Z] INFO  [PushExecutor] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-08-13T17:28:11.493Z] INFO  [PushExecutor] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] processPushPending(post-queue): 1 pending entr(ies) (filtered to 1 hash(es))
+[2026-08-13T17:28:12.714Z] INFO  [GitOps] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Commit 37385c91: implementation of agent.md and design system
+[2026-08-13T17:28:13.156Z] INFO  [StorageFactory] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] StorageFactory.create: route=cutover, projectPath=D:\project 1\themee-downloader
+[2026-08-13T17:28:14.374Z] ERROR [Backup] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] the default backup folder C:\Users\Bharath\jolli_back is inside a git worktree (git clean -xdf would delete the snapshots) — set backupFolder to a path outside it
+[2026-08-13T17:28:14.396Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] === Queue worker finished ===
+[2026-08-13T17:28:14.407Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Processing queue entry: type=ingest triggeredBy=post-commit
+[2026-08-13T17:28:15.559Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] LLM call: action=route source=jolli-proxy
+[2026-08-13T17:28:15.560Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM call: action=route url=https://jolli.ai/api/push/llm/complete
+[2026-08-13T17:28:18.767Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM response: action=route latency=3207ms
+[2026-08-13T17:28:18.777Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] LLM call: action=reconcile source=jolli-proxy
+[2026-08-13T17:28:18.777Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM call: action=reconcile url=https://jolli.ai/api/push/llm/complete
+[2026-08-13T17:28:30.640Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM response: action=reconcile latency=11863ms
+[2026-08-13T17:28:30.642Z] WARN  [ReconciledPage] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] reconcile echoed slug agent-md-design-system-setup, keeping authoritative agent-md-design-system
+[2026-08-13T17:28:30.675Z] INFO  [FolderStorage] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Wrote 1 files, deleted 0 (Update topic page agent-md-design-system)
+[2026-08-13T17:28:30.698Z] INFO  [FolderStorage] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Wrote 1 files, deleted 0 (Update topic KB index (2 topics))
+[2026-08-13T17:28:30.750Z] INFO  [FolderStorage] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Wrote 1 files, deleted 0 (Update topic KB processed-source set)
+[2026-08-13T17:28:31.114Z] INFO  [Installer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Checking Jolli Memory status
+[2026-08-13T17:28:31.954Z] INFO  [StorageFactory] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] StorageFactory.create: route=cutover, projectPath=D:\project 1\themee-downloader
+[2026-08-13T17:28:34.221Z] INFO  [Installer] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Status: enabled=true, claude=true, git=true, geminiHook=true, worktreeHooks=true, sessions=0, summaries=2, codex=true/undefined, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/undefined, copilotChat=false, cline=false/undefined
+[2026-08-13T17:28:34.227Z] INFO  [QueueWorker] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Ingest drained: 1 batches, 1 sources, held=[] (post-commit)
+[2026-08-13T17:28:34.258Z] INFO  [MetadataManager] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Manifest unregistered 2 entries of type=wiki
+[2026-08-13T17:28:34.271Z] INFO  [MetadataManager] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Manifest updated: _wiki/topic--jolli-memory-integration.md (wiki)
+[2026-08-13T17:28:34.280Z] INFO  [MetadataManager] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Manifest updated: _wiki/topic--agent-md-design-system.md (wiki)
+[2026-08-13T17:28:34.295Z] INFO  [MetadataManager] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Manifest updated: _wiki/_index.md (wiki)
+[2026-08-13T17:28:34.295Z] INFO  [FolderStorage] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Topic-KB wiki regenerated: 2 topics under C:\Users\Bharath\Documents\jolli\ai-Shopygram\_wiki
+[2026-08-13T17:28:34.326Z] INFO  [GraphBuilder] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Building knowledge graph incrementally for C:\Users\Bharath\Documents\jolli\ai-Shopygram: 0 dirty, 1 new, 0 deleted, 1 clean
+[2026-08-13T17:28:34.327Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] LLM call: action=graph-units source=jolli-proxy
+[2026-08-13T17:28:34.328Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM call: action=graph-units url=https://jolli.ai/api/push/llm/complete
+[2026-08-13T17:28:45.337Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM response: action=graph-units latency=11009ms
+[2026-08-13T17:28:45.340Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] LLM call: action=graph-categories-delta source=jolli-proxy
+[2026-08-13T17:28:45.340Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM call: action=graph-categories-delta url=https://jolli.ai/api/push/llm/complete
+[2026-08-13T17:28:50.306Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM response: action=graph-categories-delta latency=4966ms
+[2026-08-13T17:28:50.309Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] LLM call: action=graph-edges source=jolli-proxy
+[2026-08-13T17:28:50.309Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM call: action=graph-edges url=https://jolli.ai/api/push/llm/complete
+[2026-08-13T17:29:02.253Z] INFO  [LlmClient] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Proxy LLM response: action=graph-edges latency=11944ms
+[2026-08-13T17:29:02.270Z] INFO  [GraphBuilder] [trace=1da4cd9f67c60f04e95a30ab9bbfa6b5] Knowledge graph built (incremental): 2 categories, 2 topics, 12 units, 14 edges in 27963ms -> C:\Users\Bharath\Documents\jolli\ai-Shopygram\.jolli\graph\graph.json
+[2026-08-13T17:30:42.131Z] INFO  [PrePushHook] [trace=35e14b0402611ed6093493e49cb83859] pre-push hook: remote=origin budget=3000ms
+[2026-08-13T17:30:42.521Z] INFO  [PushPendingStore] [trace=35e14b0402611ed6093493e49cb83859] Enqueued 1 new push-pending entries (branch=1.Agent.md-and-design-system-setup-)
+[2026-08-13T17:30:42.527Z] INFO  [PrePushHook] [trace=35e14b0402611ed6093493e49cb83859] pre-push: recorded 1 commit(s) across 1 pushed ref(s)
+[2026-08-13T17:30:44.070Z] INFO  [PrePushHook] [trace=35e14b0402611ed6093493e49cb83859] pre-push: worker spawned (pushId=35e14b0402611ed6093493e49cb83859) — watching for 1050ms
+[2026-08-13T17:30:44.374Z] INFO  [PushExecutor] [trace=35e14b0402611ed6093493e49cb83859] processPushPending(pre-push): 2 pending entr(ies) (filtered to 1 hash(es))
+[2026-08-13T17:30:44.739Z] INFO  [PushExecutor] [trace=35e14b0402611ed6093493e49cb83859] processPushPending(pre-push): claimed 1/1 candidate(s)
+[2026-08-13T17:30:45.312Z] INFO  [PrePushHook] [trace=35e14b0402611ed6093493e49cb83859] pre-push: watch timed out — 0 of 1 settled
+[2026-08-13T17:30:45.301Z] INFO  [StorageFactory] [trace=35e14b0402611ed6093493e49cb83859] StorageFactory.create: route=cutover, projectPath=D:\project 1\themee-downloader
+[2026-08-13T17:30:46.190Z] INFO  [PushExecutor] [trace=35e14b0402611ed6093493e49cb83859] processPushPending(pre-push): triage — withMemory=1 noMemory=0 mergedChildren=0
+[2026-08-13T17:30:47.669Z] INFO  [PushExecutor] [trace=35e14b0402611ed6093493e49cb83859] processPushPending(pre-push): pushing 1 commit(s)
+[2026-08-13T17:30:50.528Z] INFO  [MetadataManager] [trace=35e14b0402611ed6093493e49cb83859] Manifest updated: 1.Agent.md-and-design-system-setup/implementation-of-agentmd-and-design-system-37385c91.md (commit)
+[2026-08-13T17:30:50.528Z] INFO  [FolderStorage] [trace=35e14b0402611ed6093493e49cb83859] Markdown generated: 1.Agent.md-and-design-system-setup/implementation-of-agentmd-and-design-system-37385c91.md
+[2026-08-13T17:30:50.532Z] INFO  [FolderStorage] [trace=35e14b0402611ed6093493e49cb83859] Wrote 3 files, deleted 0 (Overwrite summary for 37385c91: implementation of agent.md and design system)
+[2026-08-13T17:30:50.533Z] INFO  [SummaryStore] [trace=35e14b0402611ed6093493e49cb83859] Summary stored successfully for commit 37385c91
+[2026-08-13T17:30:50.730Z] INFO  [PushExecutor] [trace=35e14b0402611ed6093493e49cb83859] processPushPending(pre-push): pushed=1 failed=0
+[2026-08-13T17:30:50.731Z] INFO  [PrePushWorker] [trace=35e14b0402611ed6093493e49cb83859] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=0
+[2026-08-13T17:30:50.738Z] INFO  [PushExecutor] [trace=35e14b0402611ed6093493e49cb83859] processPushPending(pre-push): 1 pending entr(ies)
+[2026-08-13T17:30:52.788Z] INFO  [PushExecutor] [trace=35e14b0402611ed6093493e49cb83859] processPushPending(pre-push): claimed 1/1 candidate(s)
+[2026-08-13T17:30:52.984Z] INFO  [PushExecutor] [trace=35e14b0402611ed6093493e49cb83859] processPushPending(pre-push): triage — withMemory=0 noMemory=1 mergedChildren=0
+[2026-08-13T17:30:52.984Z] INFO  [PrePushWorker] [trace=35e14b0402611ed6093493e49cb83859] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no candidates with memory)
