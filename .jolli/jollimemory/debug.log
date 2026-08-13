@@ -69,3 +69,158 @@
 [2026-08-12T15:57:39.807Z] INFO  [AuthService] Sign-in successful
 [2026-08-12T15:57:39.809Z] INFO  [Installer] Checking Jolli Memory status
 [2026-08-12T15:57:41.129Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, worktreeHooks=true, sessions=0, summaries=0, codex=false/undefined, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/undefined, copilotChat=false, cline=false/undefined
+[2026-08-12T16:12:18.272Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-08-12T16:12:18.685Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-08-12T16:12:20.856Z] INFO  [PostCommitHook] [trace=0067cee8088008927ee89859a69e2ab5] Detected operation: commit
+[2026-08-12T16:12:21.245Z] INFO  [PostCommitHook] [trace=0067cee8088008927ee89859a69e2ab5] Enqueued: type=commit hash=084e678f
+[2026-08-12T16:12:21.246Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Launching background worker
+[2026-08-12T16:12:21.265Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Background worker spawned (PID: 17720)
+[2026-08-12T16:12:22.005Z] WARN  [CutoverRouter] [trace=0067cee8088008927ee89859a69e2ab5] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
+[2026-08-12T16:12:22.008Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] === Queue worker started === node=24.12.0 kind=vscode-plugin source=vscode pkgVer=0.99.11 cliVer=0.99.11 dist=c:\Users\Bharath\.vscode\extensions\jolli.jollimemory-vscode-0.99.11\dist
+[2026-08-12T16:12:22.375Z] WARN  [CutoverRouter] [trace=0067cee8088008927ee89859a69e2ab5] database unavailable for un-cutover repo (database file does not exist) — orphan remains authoritative
+[2026-08-12T16:12:22.375Z] INFO  [StorageFactory] [trace=0067cee8088008927ee89859a69e2ab5] StorageFactory.create: route=uncutover, projectPath=D:\project 1\themee-downloader
+[2026-08-12T16:12:23.015Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Processing queue entry: type=commit hash=084e678f
+[2026-08-12T16:12:23.272Z] INFO  [GitOps] [trace=0067cee8088008927ee89859a69e2ab5] Commit 084e678f: add initial configuration and logging the files for jolli me
+[2026-08-12T16:12:23.273Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Commit: 084e678f - add initial configuration and logging the files for jolli memory integration (244ms)
+[2026-08-12T16:12:23.499Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] No active sessions found — will infer topics from diff if available
+[2026-08-12T16:12:23.870Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Git diff: 6 files changed, +120 -0 (369ms)
+[2026-08-12T16:12:24.256Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-08-12T16:12:24.259Z] INFO  [Summarizer] [trace=0067cee8088008927ee89859a69e2ab5] Generating summary for commit 084e678f
+[2026-08-12T16:12:24.259Z] INFO  [Summarizer] [trace=0067cee8088008927ee89859a69e2ab5] Context: transcript=0, files=6, lines=120+0
+[2026-08-12T16:12:24.259Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] LLM call: action=summarize source=jolli-proxy
+[2026-08-12T16:12:24.261Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM call: action=summarize url=https://jolli.ai/api/push/llm/complete
+[2026-08-12T16:12:36.061Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM response: action=summarize latency=11795ms
+[2026-08-12T16:12:36.064Z] INFO  [Summarizer] [trace=0067cee8088008927ee89859a69e2ab5] Parsed 1 topic(s) from delimited text format
+[2026-08-12T16:12:36.064Z] INFO  [Summarizer] [trace=0067cee8088008927ee89859a69e2ab5] Summary parsed: 1 topic(s), response length: 1936 chars
+[2026-08-12T16:12:36.065Z] INFO  [Summarizer] [trace=0067cee8088008927ee89859a69e2ab5]   Topic 1: Set up Jolli Memory integration hooks and local tracking files
+[2026-08-12T16:12:36.065Z] INFO  [Summarizer] [trace=0067cee8088008927ee89859a69e2ab5] Recap (446 chars): The developer set up initial Jolli Memory integration for the project, connecting it to the session lifecycle of support
+[2026-08-12T16:12:36.065Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] API summary generated (11.8s)
+[2026-08-12T16:12:36.068Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Plan registry scan: found 0 uncommitted slug(s) on master: []
+[2026-08-12T16:12:36.069Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Plan association: detected 0 slug(s) from transcripts: []
+[2026-08-12T16:12:36.070Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Note registry scan: found 0 uncommitted note(s) on master: []
+[2026-08-12T16:12:36.070Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Note association: detected 0 note(s): []
+[2026-08-12T16:12:36.072Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Reference association: detected 0 ref(s) for branch master
+[2026-08-12T16:12:36.082Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Summary built for 084e678f: recap=yes, topics=1, plans=absent, notes=absent, references=absent
+[2026-08-12T16:12:37.053Z] INFO  [GitOps] [trace=0067cee8088008927ee89859a69e2ab5] Creating orphan branch 'jollimemory/summaries/v3' using plumbing commands
+[2026-08-12T16:12:37.698Z] INFO  [GitOps] [trace=0067cee8088008927ee89859a69e2ab5] Orphan branch 'jollimemory/summaries/v3' created successfully
+[2026-08-12T16:12:38.651Z] INFO  [GitOps] [trace=0067cee8088008927ee89859a69e2ab5] Updated branch 'jollimemory/summaries/v3': 3 written, 0 deleted (via fast-import)
+[2026-08-12T16:12:38.661Z] INFO  [MetadataManager] [trace=0067cee8088008927ee89859a69e2ab5] Branch mapping created: master → master
+[2026-08-12T16:12:38.698Z] INFO  [MetadataManager] [trace=0067cee8088008927ee89859a69e2ab5] Manifest updated: master/add-initial-configuration-and-logging-the-files-fo-084e678f.md (commit)
+[2026-08-12T16:12:38.699Z] INFO  [FolderStorage] [trace=0067cee8088008927ee89859a69e2ab5] Markdown generated: master/add-initial-configuration-and-logging-the-files-fo-084e678f.md
+[2026-08-12T16:12:38.703Z] INFO  [FolderStorage] [trace=0067cee8088008927ee89859a69e2ab5] Wrote 3 files, deleted 0 (Add summary for 084e678f: add initial configuration and logging the files fo)
+[2026-08-12T16:12:38.703Z] INFO  [SummaryStore] [trace=0067cee8088008927ee89859a69e2ab5] Summary stored successfully for commit 084e678f
+[2026-08-12T16:12:38.706Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Summary stored successfully for commit 084e678f (2.6s, 0 plans, 0 notes, 0 references)
+[2026-08-12T16:12:38.708Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] === Pipeline completed in 15.7s ===
+[2026-08-12T16:12:38.708Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] === Summary content (1 topics) ===
+[2026-08-12T16:12:38.708Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Topic: Set up Jolli Memory integration hooks and local tracking files
+[2026-08-12T16:12:38.708Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5]   Trigger:   The project needed Jolli Memory to automatically capture development sessions across different AI coding assistants, requiring initial setup of tracking configuration and hooks.
+[2026-08-12T16:12:38.708Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5]   Response:  - Added hook configuration files for two AI assistant integrations: a local settings file wiring session start/stop events to a run-hook script, and a settings file wiring an after-agent event to a similar hook script.
+- Created local tracking artifacts under a hidden project folder, including a debug log capturing the installer's setup steps, a profile file, a sessions registry file, and an onboarding progress marker.
+- The debug log shows the installer registering skills, updating git excludes, registering an MCP server, installing several git hooks (post-commit, post-rewrite, prepare-commit-msg, post-merge, pre-push), and completing sign-in authentication.
+[2026-08-12T16:12:38.708Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5]   Decisions: The integration was wired through native hook mechanisms of each supported assistant (session lifecycle events) rather than requiring manual invocation, so that session tracking happens automatically in the background without extra steps for the developer.
+[2026-08-12T16:12:38.902Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Processed 1 queue entries
+[2026-08-12T16:12:38.908Z] INFO  [SessionTracker] [trace=0067cee8088008927ee89859a69e2ab5] Enqueued queue operation: type=ingest tag=ingest file=1786551158905-00000001-ab41f27c-ingest.json
+[2026-08-12T16:12:38.912Z] INFO  [PushExecutor] [trace=0067cee8088008927ee89859a69e2ab5] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-08-12T16:12:40.021Z] INFO  [GitOps] [trace=0067cee8088008927ee89859a69e2ab5] Commit 084e678f: add initial configuration and logging the files for jolli me
+[2026-08-12T16:12:40.372Z] INFO  [DashboardDb] [trace=0067cee8088008927ee89859a69e2ab5] dashboard schema migrated 0 → 5
+[2026-08-12T16:12:41.614Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:12:40.864Z] INFO  [StorageFactory] [trace=0067cee8088008927ee89859a69e2ab5] StorageFactory.create: route=uncutover, projectPath=D:\project 1\themee-downloader
+[2026-08-12T16:12:41.982Z] ERROR [Backup] [trace=0067cee8088008927ee89859a69e2ab5] the default backup folder C:\Users\Bharath\jolli_back is inside a git worktree (git clean -xdf would delete the snapshots) — set backupFolder to a path outside it
+[2026-08-12T16:12:42.012Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] === Queue worker finished ===
+[2026-08-12T16:12:42.019Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Processing queue entry: type=ingest triggeredBy=post-commit
+[2026-08-12T16:12:42.509Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-12T16:12:42.510Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-12T16:12:42.510Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-12T16:12:42.510Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-12T16:12:42.529Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:12:42.767Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:12:42.939Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] LLM call: action=route source=jolli-proxy
+[2026-08-12T16:12:42.940Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM call: action=route url=https://jolli.ai/api/push/llm/complete
+[2026-08-12T16:12:43.255Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:12:43.565Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:12:43.837Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:12:48.132Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM response: action=route latency=5191ms
+[2026-08-12T16:12:48.134Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] LLM call: action=reconcile source=jolli-proxy
+[2026-08-12T16:12:48.135Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM call: action=reconcile url=https://jolli.ai/api/push/llm/complete
+[2026-08-12T16:12:57.136Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM response: action=reconcile latency=9001ms
+[2026-08-12T16:12:58.634Z] INFO  [GitOps] [trace=0067cee8088008927ee89859a69e2ab5] Updated branch 'jollimemory/summaries/v3': 1 written, 0 deleted (via fast-import)
+[2026-08-12T16:12:58.639Z] INFO  [FolderStorage] [trace=0067cee8088008927ee89859a69e2ab5] Wrote 1 files, deleted 0 (Update topic page jolli-memory-integration)
+[2026-08-12T16:12:59.505Z] INFO  [PrePushHook] [trace=47ea91d6e00351c1509a9c2b7b6671ac] pre-push hook: remote=origin budget=3000ms
+[2026-08-12T16:12:59.865Z] INFO  [PushPendingStore] [trace=47ea91d6e00351c1509a9c2b7b6671ac] Enqueued 2 new push-pending entries (branch=master)
+[2026-08-12T16:12:59.882Z] INFO  [GitOps] [trace=0067cee8088008927ee89859a69e2ab5] Updated branch 'jollimemory/summaries/v3': 1 written, 0 deleted (via fast-import)
+[2026-08-12T16:12:59.888Z] INFO  [FolderStorage] [trace=0067cee8088008927ee89859a69e2ab5] Wrote 1 files, deleted 0 (Update topic KB index (1 topics))
+[2026-08-12T16:12:59.868Z] INFO  [PrePushHook] [trace=47ea91d6e00351c1509a9c2b7b6671ac] pre-push: recorded 2 commit(s) across 1 pushed ref(s)
+[2026-08-12T16:13:00.064Z] INFO  [PrePushHook] [trace=47ea91d6e00351c1509a9c2b7b6671ac] pre-push: worker spawned (pushId=47ea91d6e00351c1509a9c2b7b6671ac) — watching for 2434ms
+[2026-08-12T16:13:00.421Z] INFO  [PushExecutor] [trace=47ea91d6e00351c1509a9c2b7b6671ac] processPushPending(pre-push): 2 pending entr(ies) (filtered to 2 hash(es))
+[2026-08-12T16:13:00.755Z] INFO  [PushExecutor] [trace=47ea91d6e00351c1509a9c2b7b6671ac] processPushPending(pre-push): claimed 2/2 candidate(s)
+[2026-08-12T16:13:01.453Z] INFO  [GitOps] [trace=0067cee8088008927ee89859a69e2ab5] Updated branch 'jollimemory/summaries/v3': 1 written, 0 deleted (via fast-import)
+[2026-08-12T16:13:01.462Z] INFO  [FolderStorage] [trace=0067cee8088008927ee89859a69e2ab5] Wrote 1 files, deleted 0 (Update topic KB processed-source set)
+[2026-08-12T16:13:01.887Z] INFO  [Installer] [trace=0067cee8088008927ee89859a69e2ab5] Checking Jolli Memory status
+[2026-08-12T16:13:01.420Z] INFO  [StorageFactory] [trace=47ea91d6e00351c1509a9c2b7b6671ac] StorageFactory.create: route=uncutover, projectPath=D:\project 1\themee-downloader
+[2026-08-12T16:13:02.585Z] INFO  [PrePushHook] [trace=47ea91d6e00351c1509a9c2b7b6671ac] pre-push: watch timed out — 0 of 2 settled
+[2026-08-12T16:13:02.992Z] INFO  [PushExecutor] [trace=47ea91d6e00351c1509a9c2b7b6671ac] processPushPending(pre-push): triage — withMemory=1 noMemory=1 mergedChildren=0
+[2026-08-12T16:13:02.831Z] INFO  [StorageFactory] [trace=0067cee8088008927ee89859a69e2ab5] StorageFactory.create: route=uncutover, projectPath=D:\project 1\themee-downloader
+[2026-08-12T16:13:04.453Z] INFO  [Installer] [trace=0067cee8088008927ee89859a69e2ab5] Status: enabled=true, claude=true, git=true, geminiHook=true, worktreeHooks=true, sessions=0, summaries=1, codex=false/undefined, gemini=true/true, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/undefined, copilotChat=false, cline=false/undefined
+[2026-08-12T16:13:04.460Z] INFO  [QueueWorker] [trace=0067cee8088008927ee89859a69e2ab5] Ingest drained: 1 batches, 1 sources, held=[] (post-commit)
+[2026-08-12T16:13:04.753Z] INFO  [PushExecutor] [trace=47ea91d6e00351c1509a9c2b7b6671ac] processPushPending(pre-push): pushing 1 commit(s)
+[2026-08-12T16:13:04.935Z] INFO  [MetadataManager] [trace=0067cee8088008927ee89859a69e2ab5] Manifest updated: _wiki/topic--jolli-memory-integration.md (wiki)
+[2026-08-12T16:13:04.980Z] INFO  [MetadataManager] [trace=0067cee8088008927ee89859a69e2ab5] Manifest updated: _wiki/_index.md (wiki)
+[2026-08-12T16:13:04.980Z] INFO  [FolderStorage] [trace=0067cee8088008927ee89859a69e2ab5] Topic-KB wiki regenerated: 1 topics under C:\Users\Bharath\Documents\jolli\ai-Shopygram\_wiki
+[2026-08-12T16:13:04.993Z] INFO  [GraphBuilder] [trace=0067cee8088008927ee89859a69e2ab5] Building knowledge graph for C:\Users\Bharath\Documents\jolli\ai-Shopygram: 1 topic(s) (full)
+[2026-08-12T16:13:05.001Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] LLM call: action=graph-categories source=jolli-proxy
+[2026-08-12T16:13:05.001Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM call: action=graph-categories url=https://jolli.ai/api/push/llm/complete
+[2026-08-12T16:13:09.238Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM response: action=graph-categories latency=4237ms
+[2026-08-12T16:13:09.240Z] INFO  [GraphDistiller] [trace=0067cee8088008927ee89859a69e2ab5] graph phase 1/3 categories: 1 categories over 1 topic(s) (4246ms)
+[2026-08-12T16:13:09.241Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] LLM call: action=graph-units source=jolli-proxy
+[2026-08-12T16:13:09.241Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM call: action=graph-units url=https://jolli.ai/api/push/llm/complete
+[2026-08-12T16:13:10.283Z] INFO  [GitOps] [trace=47ea91d6e00351c1509a9c2b7b6671ac] Updated branch 'jollimemory/summaries/v3': 3 written, 0 deleted (via fast-import)
+[2026-08-12T16:13:10.312Z] INFO  [MetadataManager] [trace=47ea91d6e00351c1509a9c2b7b6671ac] Manifest updated: master/add-initial-configuration-and-logging-the-files-fo-084e678f.md (commit)
+[2026-08-12T16:13:10.312Z] INFO  [FolderStorage] [trace=47ea91d6e00351c1509a9c2b7b6671ac] Markdown generated: master/add-initial-configuration-and-logging-the-files-fo-084e678f.md
+[2026-08-12T16:13:10.317Z] INFO  [FolderStorage] [trace=47ea91d6e00351c1509a9c2b7b6671ac] Wrote 3 files, deleted 0 (Overwrite summary for 084e678f: add initial configuration and logging the files fo)
+[2026-08-12T16:13:10.317Z] INFO  [SummaryStore] [trace=47ea91d6e00351c1509a9c2b7b6671ac] Summary stored successfully for commit 084e678f
+[2026-08-12T16:13:10.533Z] INFO  [PushExecutor] [trace=47ea91d6e00351c1509a9c2b7b6671ac] processPushPending(pre-push): pushed=1 failed=0
+[2026-08-12T16:13:10.533Z] INFO  [PrePushWorker] [trace=47ea91d6e00351c1509a9c2b7b6671ac] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=1
+[2026-08-12T16:13:10.542Z] INFO  [PushExecutor] [trace=47ea91d6e00351c1509a9c2b7b6671ac] processPushPending(pre-push): 1 pending entr(ies)
+[2026-08-12T16:13:12.561Z] INFO  [PushExecutor] [trace=47ea91d6e00351c1509a9c2b7b6671ac] processPushPending(pre-push): claimed 1/1 candidate(s)
+[2026-08-12T16:13:13.615Z] INFO  [PushExecutor] [trace=47ea91d6e00351c1509a9c2b7b6671ac] processPushPending(pre-push): triage — withMemory=0 noMemory=1 mergedChildren=0
+[2026-08-12T16:13:13.615Z] INFO  [PrePushWorker] [trace=47ea91d6e00351c1509a9c2b7b6671ac] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no candidates with memory)
+[2026-08-12T16:13:17.230Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM response: action=graph-units latency=7987ms
+[2026-08-12T16:13:17.232Z] INFO  [GraphDistiller] [trace=0067cee8088008927ee89859a69e2ab5] graph phase 2/3 units: 5 unit(s) from 1 topic(s) (7992ms)
+[2026-08-12T16:13:17.233Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] LLM call: action=graph-edges source=jolli-proxy
+[2026-08-12T16:13:17.233Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM call: action=graph-edges url=https://jolli.ai/api/push/llm/complete
+[2026-08-12T16:13:25.399Z] INFO  [LlmClient] [trace=0067cee8088008927ee89859a69e2ab5] Proxy LLM response: action=graph-edges latency=8165ms
+[2026-08-12T16:13:25.400Z] INFO  [GraphDistiller] [trace=0067cee8088008927ee89859a69e2ab5] graph phase 3/3 edges: 4 edge(s) over 5 unit(s) in 1 category (8168ms)
+[2026-08-12T16:13:25.407Z] INFO  [GraphBuilder] [trace=0067cee8088008927ee89859a69e2ab5] Knowledge graph built (full): 1 categories, 1 topics, 5 units, 4 edges in 20419ms -> C:\Users\Bharath\Documents\jolli\ai-Shopygram\.jolli\graph\graph.json
+[2026-08-12T16:13:28.048Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:13:28.679Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:13:29.603Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:13:29.814Z] INFO  [SotImport] [trace=0067cee8088008927ee89859a69e2ab5] orphan import for https://github.com/sbk888/ai-shopygram: %o
+[2026-08-12T16:13:30.478Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:13:31.189Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:13:31.690Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:13:32.240Z] INFO  [CutoverEngine] [trace=0067cee8088008927ee89859a69e2ab5] cutover committed for https://github.com/sbk888/ai-shopygram at version 1
+[2026-08-12T16:13:32.246Z] INFO  [AutoCutover] [trace=0067cee8088008927ee89859a69e2ab5] auto-cutover: D:\project 1\themee-downloader is now served from SQLite
+[2026-08-12T16:13:32.367Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:13:32.852Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:13:33.508Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:13:33.990Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:25:16.128Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-12T16:37:29.504Z] INFO  [UpdateCheck] [trace=7ebbef2a4aad4935325e705e632eba64] Spawned detached update-check refresh (PID: 3224)
+[2026-08-12T16:37:29.606Z] INFO  [SkillAutoRefresh] [trace=7ebbef2a4aad4935325e705e632eba64] Refreshed Jolli skills at d:\project 1\themee-downloader for version 0.99.11
+[2026-08-12T16:37:29.929Z] INFO  [StorageFactory] [trace=7ebbef2a4aad4935325e705e632eba64] StorageFactory.create: route=cutover, projectPath=D:/project 1/themee-downloader
+[2026-08-12T16:37:30.700Z] INFO  [SidebarWebviewProvider] pushMemories: 1 item(s)
+[2026-08-12T16:37:31.038Z] INFO  [SessionStartHook] SessionStartHook invoked (cwd=D:/project 1/themee-downloader)
+[2026-08-12T16:37:31.103Z] INFO  [SidebarWebviewProvider] pushCommits: 0 item(s), mode=empty
+[2026-08-12T16:37:31.161Z] INFO  [SessionStartHook] No briefing or reminder generated (skipped or timed out)
+[2026-08-12T16:37:34.296Z] INFO  [McpServer] [trace=7ebbef2a4aad4935325e705e632eba64] MCP server connected over stdio (cwd=D:/project 1/themee-downloader)
+[2026-08-12T16:44:09.688Z] INFO  [StorageFactory] [trace=f8219d7346ee1c6a30f2ab59cd1bd8be] StorageFactory.create: route=cutover, projectPath=D:/project 1/themee-downloader
+[2026-08-12T16:44:11.439Z] INFO  [SessionStartHook] SessionStartHook invoked (cwd=D:/project 1/themee-downloader)
+[2026-08-12T16:44:11.579Z] INFO  [SessionStartHook] No briefing or reminder generated (skipped or timed out)
+[2026-08-13T06:51:17.062Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"d:\\project 1\\themee-downloader","extensionPath":"c:\\Users\\Bharath\\.vscode\\extensions\\jolli.jollimemory-vscode-0.99.11"}
+[2026-08-13T06:51:18.075Z] INFO  [initialLoad] Loading all panels
+[2026-08-13T06:51:20.551Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-13T06:51:20.552Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-13T06:51:20.552Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-13T06:51:20.552Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-13T06:51:22.453Z] INFO  [Sync:VsCodeBootstrap] Memory Bank sync engine built (auto-sync off — manual only)
+[2026-08-13T06:51:23.189Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=d:\project 1\themee-downloader

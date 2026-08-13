@@ -1,4 +1,12 @@
 {
 	"userDisabled": false,
-	"manuallyDisabled": false
+	"manuallyDisabled": true,
+	"cutoverAttemptedAtMs": 1786551205414,
+	"cutoverFence": {
+		"reason": "cutover to sqlite",
+		"at": "2026-08-12T16:13:25.873Z",
+		"tips": {
+			"D:\\project 1\\themee-downloader": "5c2b343916cd2c2d2926688e876c65aea5e5a394"
+		}
+	}
 }

@@ -1,69 +1,22 @@
-import Image from "next/image";
-
-export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
-}
+const palettes = {
+  primary: [["#ff5d3d","500"],["#ff8067","400"],["#ffb9a9","300"],["#ffdbd2","200"],["#fff1ed","100"]],
+  neutral: [["#172033","900"],["#3c4b63","700"],["#8593a5","500"],["#d8e0e9","300"],["#f4f6f9","100"],["#fafbfc","50"]],
+  semantic: [["#22c55e","Success"],["#f59e0b","Warning"],["#ef4444","Error"],["#3b82f6","Info"],["#8b5cf6","Purple"]]
+};
+function Logo(){return <span className="logo"><i /><b /></span>}
+function Panel({children}:{children:React.ReactNode}){return <section className="panel">{children}</section>}
+function Swatches({items}:{items:string[][]}){return <div className="swatches">{items.map(([color,name])=><div key={name}><span style={{background:color}} /><b>{name}</b><small>{color}</small></div>)}</div>}
+export default function Home(){return <main className="canvas">
+<header><Logo/><div><strong>Shopify Theme Builder</strong><em>Design System</em></div></header>
+<section className="hero"><div className="intro"><h1>Design System</h1><p>A unified design language for building beautiful, consistent,<br/> and intuitive Shopify theme experiences.</p></div><div className="hero-logo"><Logo/></div><aside><h2>Design Principles</h2>{[["?","Clarity","Clear hierarchy and visual simplicity."],["?","Consistency","Unified components and styles."],["?","Flexibility","Composable and theme-friendly."],["?","Accessibility","Built with inclusivity in mind."]].map(([icon,title,text])=><div className="principle" key={title}><span>{icon}</span><p><b>{title}</b><small>{text}</small></p></div>)}</aside></section>
+<div className="grid">
+<Panel><h2>Colors</h2><h3>Primary</h3><Swatches items={palettes.primary}/><h3>Neutrals</h3><Swatches items={palettes.neutral}/><h3>Semantic</h3><Swatches items={palettes.semantic}/></Panel>
+<Panel><h2>Typography</h2><div className="type-top"><strong>Aa</strong><p><b>Inter</b><small>Regular<br/>Medium<br/>Semibold<br/>Bold</small></p></div><div className="type-list">{[["H1","Heading 1","36px / 44px","Bold"],["H2","Heading 2","28px / 36px","Semibold"],["H3","Heading 3","22px / 28px","Semibold"],["H4","Heading 4","18px / 24px","Medium"],["Body Large","","16px / 24px","Regular"],["Body Base","","14px / 20px","Regular"],["Small","","12px / 16px","Regular"]].map(x=><div key={x[0]}><b>{x[0]}</b><strong>{x[1]}</strong><span>{x[2]}</span><small>{x[3]}</small></div>)}</div></Panel>
+<Panel><h2>Buttons</h2><ButtonLine title="Primary" classes="filled"/><ButtonLine title="Secondary" classes="outline"/><ButtonLine title="Ghost" classes="ghost"/><h3>Icon Button</h3><div className="icons">{["+","+","+","+","?","?","?","?"].map((x,i)=><button className={`icon i${i}`} key={i}>{x}</button>)}</div></Panel>
+<Panel><h2>Spacing Scale</h2><div className="spacing">{[4,8,12,16,24,32,48,64,96].map(x=><div key={x}><span style={{height:Math.max(8,x/2.5)}}/><b>{x}</b><small>{x/16}rem</small></div>)}</div></Panel>
+<Panel><h2>Radius (Border Radius)</h2><div className="radii">{[[0,"None"],[4,"Sm"],[8,"Md"],[12,"Lg"],[16,"Xl"],[20,"2xl"],[999,"Full"]].map(([x,n])=><div key={n}><span style={{borderRadius:Number(x)}}/><b>{n}</b><small>{x}px</small></div>)}</div></Panel>
+<Panel><h2>Shadows</h2><div className="shadows">{[["Sm","0 1px 2px #00000012"],["Md","0 4px 6px #00000014"],["Lg","0 10px 15px #00000016"],["Xl","0 20px 25px #00000018"],["2xl","0 25px 50px #00000020"]].map(([n,s])=><div key={n}><span style={{boxShadow:s}}/><b>{n}</b><small>{s}</small></div>)}</div></Panel>
+</div>
+<section className="components"><h2>Components <span>(UI Examples)</span></h2><div className="examples"><article><h3>Card</h3><div className="vase">?</div><p><b>Minimal Ceramic Vase</b><small>Home Decor</small><strong>$45.00</strong></p><button>View product</button></article><article><h3>Input Field</h3><label>Label<input placeholder="Enter page name"/></label><small>Helper text goes here</small></article><article><h3>Select</h3><label>Choose a template<select defaultValue="landing"><option value="landing">Landing page</option></select></label></article><article><h3>Tag</h3><div className="tags"><span>Landing ×</span><span>New ×</span><span>Premium ×</span></div></article><article><h3>Alert</h3><div className="alert">? <p><b>Theme exported successfully!</b><small>Your file is ready to download.</small></p>×</div></article></div></section>
+</main>}
+function ButtonLine({title,classes}:{title:string;classes:string}){return <><h3>{title}</h3><div className="buttons">{["Default","Hover","Pressed","Disabled"].map((x,i)=><button className={`${classes} b${i}`} key={x}>{x}</button>)}</div></>}
